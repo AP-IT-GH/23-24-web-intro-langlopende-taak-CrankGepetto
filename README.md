@@ -40,7 +40,7 @@ Je website met dashboard bevat verschillende pagina's:
   - een sfeerbeeld
   - een uitleg over jezelf in de context van het onderwerp
   - een foto van jezelf
-- **diensten** (`diensten.html`): 1 pagina met een overzicht van 6 diensten/functionaliteiten gelinkt aan jouw app/website met dashboard. Deze pagina _moet_ voor _elk topic_ bevatten:
+- **diensten** (`diensten.html`): 1 pagina met een overzicht van 6 diensten/functionaliteiten  gelinkt aan jouw app/website met dashboard. Deze pagina _moet_ voor _elk topic_ bevatten:
   - een titel, waar je op kan klikken om op een detailpagina terecht te komen
   - een korte uitleg
   - een bijhorend icoontje en/of foto

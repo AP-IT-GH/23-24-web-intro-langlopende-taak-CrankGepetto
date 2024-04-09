@@ -1,0 +1,20 @@
+.rubik-rubik {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #ff3300;
+}
+.rubik-zwart {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #000000;
+}
+body {
+  background-image: url('../assets/plain-only-one-side-design-gradient-red-Color-youtube-thumbnail-template-298.png');
+  background-size: cover;
+  background-position: center;
+  /* Add any additional background properties here */
+}
