@@ -17,80 +17,112 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 
 <body>
-  
-  <img class="bg-img" src="./assets/plain-only-one-side-design-gradient-red-Color-youtube-thumbnail-template-298.png" alt="Bg image">
 
-  <nav class="navbar navbar-expand-md fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="./assets/oie_oie_trim_image (3).png" alt="Logo" width="100" height="100">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav nav-underline">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="diensten.html">Diensten</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="dashboard.html">Dashboard</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div>
+  <img class="bg-img" src="./assets/achtergrondcontact.png" alt="Bg image">
   
-
   <header class="row m-5 oswald-header">
-    <h1 class="col display-2 text-center">We horen graag van je!</h1>
+      <h1 class="col display-2 text-center">We horen graag van je!</h1>
+
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/logonavbar.png" alt="Logo" width="100" height="100">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav nav-underline">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="dashboard.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dashboard</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="diensten.html">Overzicht</a></li>
+                    <li><a class="dropdown-item" href="detailpagina.html">Detailpagina</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="dashboard.html">Live preview</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="zoeken" placeholder="Seg, zoekt is nekeer iets" aria-label="zoeken">
+                <button class="btn btn-dark" type="submit">Zoeken</button>
+              </form>
+          </div>
+        </div>
+      </nav>
+
+  
+
+
   </header>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 mx-auto">
-        <label for="brand" class="form-label rubik-zwart">Naar wie wil je een bericht sturen?</label>
-        <select id="brand" class="form-select mb-3 rubik-zwart">
-          <option value="Admin" selected>Administrator</option>
-          <option value="Webdev">Webdesigner</option>
-        </select>
-        <form>
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">Naam</span>
-            <input type="text" class="form-control rubik-zwart" placeholder="Joske Vermeulen" aria-label="Username" aria-describedby="basic-addon1">
-          </div>
-        
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon2">E-mail</span>
-            <input type="text" class="form-control" placeholder="Joske.Vermeulen@outlook.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
-          </div>
-        
-          <div class="input-group">
-            <span class="input-group-text">Je bericht</span>
-            <textarea class="form-control" aria-label="With textarea"></textarea>
-          </div>
+  <main>
 
-          <div class="mb-3">
-            <button type="submit" class="btn btn-danger" style="margin-top: 10px;">submit</button>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <label for="brand" class="form-label rubik-zwart">Naar wie wil je een bericht sturen?</label>
+          <select id="brand" class="form-select mb-3 rubik-zwart">
+            <option value="Admin" selected>Administrator</option>
+            <option value="Webdev">Webdesigner</option>
+          </select>
+          <form>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Naam</span>
+              <input type="text" class="form-control rubik-zwart" placeholder="Joske Vermeulen" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+          
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon2">E-mail</span>
+              <input type="text" class="form-control" placeholder="Joske.Vermeulen@outlook.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            </div>
+          
+            <div class="input-group">
+              <span class="input-group-text">Je bericht</span>
+              <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+
+            <div class="mb-3">
+              <button type="submit" class="btn btn-danger" style="margin-top: 10px;">submit</button>
+            </div>
+          </form>
+
+          <div>
+            <h3>Of kom ons bezoeken in de Zoo van Antwerpen. We zitten links van de leeuwen!</h3>
+          <div id="map" style="width: 700px; height: 400px;"></div>
           </div>
-        </form>
-        <div class="mb-3" style="margin-top: 10px;">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.3921419694443!2d4.4094479967895595!3d51.23027250000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f1df94eb28a5%3A0x39934ed1372329aa!2sAP%20Hogeschool%20-%20Campus%20Spoor%20Noord%20-%20Ellermanstraat!5e0!3m2!1snl!2sbe!4v1712685022379!5m2!1snl!2sbe" width="635" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <script>
+
+            const map = L.map('map').setView([51.216305, 4.424015], 13);
+
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+              maxZoom: 19,
+              attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+
+            var marker = L.marker([51.216305, 4.424015]).addTo(map);
+
+            </script>
         </div>
       </div>
     </div>
-  </div>
+
+    
+
+  </main>
+
+  
 
       <footer class="bg-dark py-5 mt-5">
         <div class="container text-light text-center">

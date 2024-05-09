@@ -21,6 +21,7 @@ html,body{
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  position: relative;
 }
 
 .page-header{
@@ -28,14 +29,11 @@ html,body{
   font-size: 1.25rem;
 
 }
-.chart-container {
-  width: 90%;
-  padding-left: 30px;
-  padding-right: 30px;
+#map { height: 180px; }
 
-}
-a{
-
-  color:black;
-  text-decoration: none !important;
+.leaflet-container {
+  height: 400px;
+  width: 600px;
+  max-width: 100%;
+  max-height: 100%;
 }

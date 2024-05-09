@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact</title>
+  <!-- reset jouw css -->
+  <link href="./css/reset.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- JavaScript: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+  <!-- eigen geschreven css voor jouw html-bestand -->
+  <link href="./css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+</head>
+
+<body>
+  
+    <header class="oswald-header">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff0000" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,192C384,160,480,96,576,96C672,96,768,160,864,176C960,192,1056,160,1152,154.7C1248,149,1344,171,1392,181.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        <h1 class="col display-2 text-center">Details, details, details.</h1>
+  
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/logonavbar.png" alt="Logo" width="100" height="100">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav nav-underline">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="dashboard.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dashboard</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="diensten.html">Overzicht</a></li>
+                    <li><a class="dropdown-item" href="detailpagina.html">Detailpagina</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="dashboard.html">Live preview</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="zoeken" placeholder="Seg, zoekt is nekeer iets" aria-label="zoeken">
+                <button class="btn btn-dark" type="submit">Zoeken</button>
+              </form>
+          </div>
+        </div>
+      </nav>
+  
+  
+  
+    </header>
+  
+<main>
+  
+        
+<hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <div class="ps-md-5">
+        <h2 class="featurette-heading fw-normal lh-1">Logboek & waarschuwingen</h2>
+        <p class="lead">
+            Deze dienst biedt een essentiële sectie waarin recente logboekgebeurtenissen en waarschuwingen worden gepresenteerd, waardoor beheerders snel inzicht krijgen in eventuele problemen die aandacht vereisen. Door een overzicht te bieden van recente activiteiten en mogelijke risico's, stelt deze sectie beheerders in staat om proactief te handelen en potentiële problemen te identificeren voordat ze groter worden. Met deze functie kunnen beheerders effectief monitoren en reageren op de gezondheid en prestaties van de systemen die ze beheren, waardoor de algehele betrouwbaarheid en stabiliteit worden verbeterd.</p>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="ps-md-5">
+        <img src="./assets/boek.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="boek: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>boek</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/></img>
+      </div>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <div class="ps-md-5">
+        <h2 class="featurette-heading fw-normal lh-1">Netwerkverkeer</h2>
+        <p class="lead">een grafiek van netwerkverkeer, die beheerders een visuele weergave geeft van de activiteit op het netwerk. Door middel van deze grafiek kunnen beheerders trends en patronen identificeren in het netwerkverkeer, zoals piekmomenten of ongewone activiteit, wat hen in staat stelt om potentiële knelpunten of beveiligingsproblemen snel te herkennen. Het biedt een waardevol instrument voor het monitoren van de prestaties van het netwerk en het nemen van gepaste maatregelen om de stabiliteit en efficiëntie te waarborgen. Met deze functie kunnen beheerders het netwerkverkeer effectief beheren en optimaliseren om een soepele werking van het netwerk te garanderen.</p>
+      </div>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <div class="ps-md-5">
+        <img src="./assets/verkeer.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="verkeer: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>verkeer</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/></img>
+      </div>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <div class="ps-md-5">
+        <h2 class="featurette-heading fw-normal lh-1">Opslaggebruik</h2>
+        <p class="lead">Een donutgrafiek van opslaggebruik biedt een visuele representatie van de verdeling van opslagruimte op een systeem of een specifiek apparaat. Deze grafiek toont verschillende sectoren die elk een deel van de totale opslagcapaciteit vertegenwoordigen, waarbij de grootte van elke sector proportioneel is aan het gebruikte opslagvolume. Hierdoor kunnen beheerders snel identificeren welke delen van de opslag het meest worden gebruikt en welke mogelijk ruimte hebben voor optimalisatie. Door trends in het opslaggebruik te observeren, zoals groeiende of afnemende sectoren, kunnen beheerders proactief handelen om de opslagcapaciteit te beheren en toekomstige capaciteitsbehoeften te plannen. Deze grafiek dient als een waardevol hulpmiddel voor het monitoren en optimaliseren van de opslaginfrastructuur, wat bijdraagt aan een efficiënter beheer en een betere beschikbaarheid van opslagbronnen.</p>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="ps-md-5">
+        <img src="./assets/donut.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="donut: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>donut</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <div class="ps-md-5">
+        <h2 class="featurette-heading fw-normal lh-1">Updateoverzicht</h2>
+        <p class="lead">
+            Een updateoverzichtssectie biedt een gestructureerd overzicht van recente updates en wijzigingen in het systeem of de applicaties. Deze sectie geeft beheerders snel inzicht in welke updates zijn geïmplementeerd, welke problemen zijn opgelost en welke nieuwe functies zijn toegevoegd. Door deze informatie te presenteren in een overzichtelijke indeling, kunnen beheerders gemakkelijk de impact van updates beoordelen en eventuele follow-upacties plannen. Het updateoverzicht stelt beheerders in staat om de status van het systeem bij te houden en ervoor te zorgen dat alle systemen up-to-date zijn met de laatste patches en verbeteringen, waardoor de beveiliging en stabiliteit worden gewaarborgd. Het biedt een efficiënte manier om wijzigingen in het systeem te documenteren en zorgt voor transparantie en traceerbaarheid in het updateproces.</p>
+      </div>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <div class="ps-md-5">
+        <img src="./assets/update.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="update: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/></img>
+      </div>
+    </div>
+  </div>
+
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <div class="ps-md-5">
+        <h2 class="featurette-heading fw-normal lh-1">systeemgezondheid</h2>
+        <p class="lead">
+            Een pie chart die de systeemgezondheid visualiseert, biedt een overzicht van de verschillende aspecten van het systeem die de algehele gezondheid beïnvloeden. Elk segment van de taart vertegenwoordigt een specifiek gezondheidsaspect, zoals CPU-gebruik, geheugengebruik, netwerkbelasting, enzovoort. Door deze aspecten in een enkele grafiek te tonen, kunnen beheerders snel een beeld krijgen van de algehele systeemgezondheid en eventuele problemen of knelpunten identificeren. Veranderingen in de grootte van de segmenten kunnen wijzen op variaties in systeemprestaties of mogelijke storingen. Hierdoor kunnen beheerders proactief reageren door problemen op te lossen voordat ze de algehele systeemprestaties beïnvloeden, waardoor de uptime en betrouwbaarheid van het systeem worden verbeterd. De pie chart biedt een intuïtieve en eenvoudige manier om de systeemgezondheid te monitoren en maakt het mogelijk om snel te reageren op veranderingen of problemen.</p>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="ps-md-5">
+        <img src="./assets/gezondheid.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="gezondheid: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Gezondheid</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/></img>
+      </div>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <div class="ps-md-5">
+        <h2 class="featurette-heading fw-normal lh-1">Uptime</h2>
+        <p class="lead">
+            Een uptime grafiek, opgedeeld over meerdere servers, geeft een overzicht van de operationele status van elk systeem gedurende een bepaalde periode, gemeten in dagen. Door de uptime van verschillende servers grafisch weer te geven, kunnen beheerders trends en patronen identificeren in de betrouwbaarheid en beschikbaarheid van elk systeem. Deze grafiek biedt waardevolle inzichten in de prestaties van de servers en stelt beheerders in staat om potentiële problemen te detecteren, zoals frequentere uitvaltijden of onregelmatigheden in de uptime-patronen. Met dit inzicht kunnen beheerders proactief reageren op mogelijke storingen en onderhoudsplanningen optimaliseren om de uptime van de servers te maximaliseren en de operationele efficiëntie te verbeteren.</p>
+      </div>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <div class="ps-md-5">
+        <img src="./assets/time.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="uptime: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>uptime</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/></img>
+      </div>
+    </div>
+  </div>
+
+    </main>
+
+    
+
+  
+        <footer class="bg-dark py-5 mt-5">
+          <div class="container text-light text-center">
+          <p class="display-5 mb-3">Nothing to see here, move on.</p>
+          <small class="text-white-50">&copy; 2024 Joske Vermeulen & Co. All rights reserved.<br></small>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://twitter.com/" target="_blank">
+            <i class="bi bi-twitter fs-3" style="color:red"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.facebook.com" target="_blank">
+            <i class="bi bi-facebook fs-3" style="color:red"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.instagram.com" target="_blank">
+            <i class="bi bi-instagram fs-3" style="color:red"></i>
+          </a>
+        </li>
+        </footer>
+
+        
+  
+  </body>
+  </html>
+  

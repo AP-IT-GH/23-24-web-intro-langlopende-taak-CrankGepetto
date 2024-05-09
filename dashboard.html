@@ -16,7 +16,7 @@
   <link href="./css/style.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""/>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -24,38 +24,48 @@
 
 
 <body>
-
+    <header class="oswald-header">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff0000" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,192C384,160,480,96,576,96C672,96,768,160,864,176C960,192,1056,160,1152,154.7C1248,149,1344,171,1392,181.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
 
-  <nav class="navbar navbar-expand-md fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="./assets/oie_oie_trim_image (3).png" alt="Logo" width="100" height="100">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav nav-underline">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="diensten.html">Diensten</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="dashboard.html">Dashboard</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div>
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/logonavbar.png" alt="Logo" width="100" height="100">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav nav-underline">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="dashboard.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dashboard</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="diensten.html">Overzicht</a></li>
+                    <li><a class="dropdown-item" href="detailpagina.html">Detailpagina</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="dashboard.html">Live preview</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="zoeken" placeholder="Seg, zoekt is nekeer iets" aria-label="zoeken">
+                <button class="btn btn-dark" type="submit">Zoeken</button>
+              </form>
+          </div>
+        </div>
+      </nav>
 
-<div class="chart-container justify-content-center">
+    </header>
+
+<main>
+
+<div class="chart-container justify-content-center oswald-header">
     <div class="container">
         <h1 class="text-center mb-5">Dashboard - Beheer je gegevens met krachtige grafieken</h1>
     </div>
@@ -103,11 +113,30 @@
     </div>
 </div>
 
-<div class="footer-container">
-    <!-- Footer content -->
-</div>
+<h2 class="text-center oswald-header">Laatste 15 users van het dashboard in jouw bedrijf</h2>
+      <div class="table-responsive small">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Achternaam</th>
+              <th scope="col">Voornaam</th>
+              <th scope="col">E-mail</th>
+              <th scope="col">Username</th>
+            </tr>
+          </thead>
+          <tbody>
 
-<div class="footer-container">
+          </tbody>
+        </table>
+      </div>
+
+
+</main>
+
+
+
+
     <footer class="bg-dark py-5 mt-5 footer">
         <div class="container text-light text-center">
             <p class="display-5 mb-3">Nothing to see here, move on.</p>
@@ -131,7 +160,6 @@
             </ul>
         </div>
     </footer>
-</div>
 
 <script>
 // Chart 1
@@ -281,6 +309,27 @@ var myChart6 = new Chart(ctx6, {
     }
 });
 </script>
+
+<script>
+    // Fetch random user data from Random User Generator API
+    fetch('https://randomuser.me/api/?results=15')
+        .then(response => response.json())
+        .then(data => {
+            const tableBody = document.querySelector('.table-striped tbody');
+            data.results.forEach((user, index) => {
+                const newRow = document.createElement('tr');
+                newRow.innerHTML = `
+                    <td>${index + 1}</td>
+                    <td>${user.name.first}</td>
+                    <td>${user.name.last}</td>
+                    <td>${user.email}</td>
+                    <td>${user.location.city}</td>
+                `;
+                tableBody.appendChild(newRow);
+            });
+        })
+        .catch(error => console.error('Error fetching data:', error));
+    </script>
 
 
 </body>

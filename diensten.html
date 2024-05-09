@@ -16,154 +16,216 @@
   <link href="./css/style.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 
 <body>
   
-  <img class="bg-img" src="./assets/plain-only-one-side-design-gradient-red-Color-youtube-thumbnail-template-298.png" alt="Bg image">
+  <header class="oswald-header">
+  
 
-  <nav class="navbar navbar-expand-md fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="./assets/oie_oie_trim_image (3).png" alt="Logo" width="100" height="100">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav nav-underline">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="diensten.html">Diensten</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="dashboard.html">Dashboard</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div>
-
-
-
-
-  <main>
-
-    <section class="py-5 text-center container">
-      <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light oswald-header">Diensten</h1>
-          <p class="lead text-body-secondary oswald-font">Hieronder kan je een overzicht vinden van de 6 diensten en metrics die we weergeven in ons dashboard</p>
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/logonavbar.png" alt="Logo" width="100" height="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav nav-underline">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="dashboard.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dashboard</a>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="diensten.html">Overzicht</a></li>
+                  <li><a class="dropdown-item" href="detailpagina.html">Detailpagina</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="dashboard.html">Live preview</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+              <input class="form-control me-2" type="zoeken" placeholder="Seg, zoekt is nekeer iets" aria-label="zoeken">
+              <button class="btn btn-dark" type="submit">Zoeken</button>
+            </form>
         </div>
       </div>
-    </section>
+    </nav>
   
-    <div class="album py-5 bg-body-tertiary">
-      <div class="container">
-  
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          <div class="col">
-            <div class="card h-100 shadow-sm d-flex flex-column">
-              <img src="./assets/Logboeken en waarschuwingen.PNG" bd-placeholder-img card-img-top  width="100%" height="225" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img>
-              <div class="card-body">
-                <p class="card-text oswald-font">Een sectie waarin recente logboekgebeurtenissen en waarschuwingen worden weergegeven, zodat beheerders snel kunnen zien of er problemen zijn die aandacht vereisen.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-outline-danger btn-lg">
-                      <a href="dashboard.html">View</a></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+  </nav>
 
-          <div class="col">
-            <div class="card h-100 shadow-sm d-flex flex-column">
-              <img src="./assets/Netwerkverkeer.PNG" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
-              <div class="card-body">
-                <p class="card-text">Grafische weergave van het inkomende en uitgaande netwerkverkeer voor elke server of voor het hele netwerk. Dit kan bijvoorbeeld worden weergegeven als lijngrafieken of staafdiagrammen.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-outline-danger btn-lg">
-                      <a href="dashboard.html">View</a>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff0000" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,192C384,160,480,96,576,96C672,96,768,160,864,176C960,192,1056,160,1152,154.7C1248,149,1344,171,1392,181.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
 
-          <div class="col">
-            <div class="card h-100 shadow-sm d-flex flex-column">
-              <img src="./assets/Storagespace.png" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
-              <div class="card-body">
-                <p class="card-text">Toon het gebruik van opslagruimte over alle systemen en krijg een overzicht over wat er nog beschikbaar is.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-outline-danger btn-lg">
-                      <a href="dashboard.html">View</a></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col">
-            <div class="card h-100 shadow-sm d-flex flex-column">
-              <img src="./assets/Systeemgezondheid.PNG" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
-              <div class="card-body">
-                <p class="card-text">Een overzicht van de algehele gezondheid van alle systemen samen. Dit is handig om oververhitting of hardwareproblemen te detecteren en tijdig onderhoud in te plannen.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-outline-danger btn-lg">
-                      <a href="dashboard.html">View</a></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col">
-            <div class="card h-100 shadow-sm d-flex flex-column">
-              <img src="./assets/Systeemupdates.PNG" class="bd-placeholder-img card-img-top" width="10%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
-              <div class="card-body">
-                <p class="card-text">Een overzicht van alle updates die gebeurd zijn opgedeeld in verschillende categorieen.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-outline-danger btn-lg">
-                      <a href="dashboard.html">View</a></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+  </header>
 
-          <div class="col">
-            <div class="card h-100 shadow-sm d-flex flex-column">
-              <img src="./assets/Uptime.PNG" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
-              <div class="card-body">
-                <p class="card-text">Laat de algemene uptime in dagen zien opgedeeld per server. Dit kan een voordeel zijn in onderhoudsplanning van de benoemde servers.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-outline-danger btn-lg">
-                      <a href="dashboard.html">View</a></button>
-                  </div>
+
+<div class="container-fluid">
+    <div class="row">
+        <main class="col-md-9">
+            <div class="oswald-header">
+            <section class="py-5 text-center container">
+                <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light oswald-header col display-2 text-center">Diensten</h1>
+                    <p class="lead text-body-secondary oswald-font">Hieronder kan je een overzicht vinden van de 6 diensten en metrics die we weergeven in ons dashboard</p>
                 </div>
+                </div>
+            </section>
+            
+            <div class="album py-5 bg-body-tertiary">
+                <div class="container">
+            
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                        <img src="./assets/logbook.PNG" bd-placeholder-img card-img-top  width="100%" height="225" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img>
+                        <div class="card-body">
+                        <p class="card-text oswald-font">Een sectie waarin recente logboekgebeurtenissen en waarschuwingen worden weergegeven, zodat beheerders snel kunnen zien of er problemen zijn die aandacht vereisen.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-outline-danger btn-lg">
+                                <a href="dashboard.html">View</a></button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                        <img src="./assets/netwerkverkeer.PNG" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+                        <div class="card-body">
+                        <p class="card-text">Grafische weergave van het inkomende en uitgaande netwerkverkeer voor elke server of voor het hele netwerk. Dit kan bijvoorbeeld worden weergegeven als lijngrafieken of staafdiagrammen.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-outline-danger btn-lg">
+                                <a href="dashboard.html">View</a>
+                            </button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                        <img src="./assets/storagespace.png" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+                        <div class="card-body">
+                        <p class="card-text">Toon het gebruik van opslagruimte over alle systemen en krijg een overzicht over wat er nog beschikbaar is.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-outline-danger btn-lg">
+                                <a href="dashboard.html">View</a></button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+            
+                    <div class="col">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                        <img src="./assets/systeemgezondheid.PNG" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+                        <div class="card-body">
+                        <p class="card-text">Een overzicht van de algehele gezondheid van alle systemen samen. Dit is handig om oververhitting of hardwareproblemen te detecteren en tijdig onderhoud in te plannen.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-outline-danger btn-lg">
+                                <a href="dashboard.html">View</a></button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="col">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                        <img src="./assets/systeemupdates.PNG" class="bd-placeholder-img card-img-top" width="10%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+                        <div class="card-body">
+                        <p class="card-text">Een overzicht van alle updates die gebeurd zijn opgedeeld in verschillende categorieen.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-outline-danger btn-lg">
+                                <a href="dashboard.html">View</a></button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                        <img src="./assets/uptime.PNG" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+                        <div class="card-body">
+                        <p class="card-text">Laat de algemene uptime in dagen zien opgedeeld per server. Dit kan een voordeel zijn in onderhoudsplanning van de benoemde servers.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-outline-danger btn-lg">
+                                <a href="dashboard.html">View</a></button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
               </div>
             </div>
-          </div>
+
+            
+
+        </main>
+
+        <aside class="col-md-2 border-start ps-4">
+            <h2 class="text-uppercase fs-4 fw-bolder pt-3">Te lui voor de contact pagina?</h2>
+            <p>&copy; Serverwatcher<br>
+            E-mail: <a href="mailto:mail@ap-coffeeshop.be">joske.vermeulen@outlook.com</a><br></p>
+            <ul class="list-inline socials">
+            <li class="list-inline-item">
+                <a href="https://www.instagram.com" target="_blank">
+                <i class="bi bi-instagram fs-3" style="color:red"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.facebook.com" target="_blank">
+                <i class="bi bi-facebook fs-3" style="color:red"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://twitter.com/" target="_blank">
+                <i class="bi bi-twitter  fs-3" style="color:red"></i>
+                </a>
+            </li>
+            </ul>
+            <div>
+              <h3>Bezoek ons ook in Honolulu!</h3>
+            
+            <div id="map" style="width: 600px; height: 400px;"></div>
+            </div>
+            <script>
+
+            const map = L.map('map').setView([21.400317, -157.974099], 13);
+
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+              maxZoom: 19,
+              attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+
+            var marker = L.marker(21.400317, -157.974099, 13).addTo(map);
+
+            </script>
+
+            
+        </aside>
+</div>
     </div>
-  
-  </main>
 
+  
   
   <footer class="bg-dark py-5 mt-5">
     <div class="container text-light text-center">
